@@ -60,6 +60,6 @@ public class Rectangle {
         boolean sameHeightReversed = Utils.equals(height, otherRectangle.width);
         boolean sameWidthReversed = Utils.equals(width, otherRectangle.height);
 
-        return (sameHeight && sameWidth) || (sameHeightReversed && sameWidthReversed);
+return (sameHeight && sameWidth) || (sameHeightReversed && sameWidthReversed);
     }
 }

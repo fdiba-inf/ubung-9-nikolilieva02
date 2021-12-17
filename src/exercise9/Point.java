@@ -26,6 +26,18 @@ public class Point {
         y = Utils.INPUT.nextDouble();
     }
 
+public void translate(double xDelta, double yDelta) {
+        x = x + xDelta;
+        y = y + yDelta;
+    }
+
+    public Point createNewTranslatedPoint(double xDelta, double yDelta) {
+        double newX = x + xDelta;
+        double newY = y + yDelta;
+        return new Point(newX, newY);
+    }
+
+  
     public void translate(double xDelta, double yDelta) {
         x = x + xDelta;
         y = y + yDelta;
@@ -37,13 +49,4 @@ public class Point {
         return new Point(newX, newY);
     }
 
-    public boolean equals(Point otherPoint) {
-        boolean xEqual = Utils.equals(x, otherPoint.x);
-        boolean yEqual = Utils.equals(y, otherPoint.y);
-        return xEqual && yEqual;
-    }
-
-    public String toString() {
-        return "(" + x + ", " + y + ")";
-    }
-}
+    
